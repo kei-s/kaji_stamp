@@ -47,7 +47,11 @@ end
 gem 'haml-rails'
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'rspec'
 end
 
 gem 'rails_12factor', group: :production
+
+gem 'google_calendar'
+gem 'figaro'

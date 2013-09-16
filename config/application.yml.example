@@ -1,0 +1,5 @@
+# Add application configuration variables here, as shown below.
+#
+GOOGLE_CALENDAR_USERNAME: 'foo@gmail.com'
+GOOGLE_CALENDAR_PASSWORD: 'bar'
+GOOGLE_CALENDAR_ID: 'bazbazbaz@group.calendar.google.com'
