@@ -1,0 +1,29 @@
+%h1 Kaji Stamp !!!
+
+= link_to 'New Task', new_task_path
+
+%h2 Users
+%table
+  %tr
+    %th Name
+    %th Point
+
+  - @users.each do |user|
+    %tr
+      %td= user.name
+      %td= user.tasks.pluck(:point).sum
+      %td= link_to 'Show', user
+
+%h2 Tasks
+%table
+  %tr
+    %th Name
+    %th Completed at
+    %th Point
+    %th User
+  - @tasks.each do |task|
+    %tr
+      %td= task.name
+      %td= task.completed_at
+      %td= task.point
+      %td= link_to task.user.name, user_path(task.user)
