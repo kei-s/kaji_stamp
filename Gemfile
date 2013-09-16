@@ -55,3 +55,4 @@ gem 'rails_12factor', group: :production
 
 gem 'google_calendar'
 gem 'figaro'
+gem 'meta-tags', :require => 'meta_tags'
